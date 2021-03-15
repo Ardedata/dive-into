@@ -12,13 +12,13 @@ https://github.com/dolthub/dolt
 * [DoltHub](#dolthub)
 * [Pros & Cons](#pros-cons)
 
-Vous vous êtes toujours demandé comment versionner les schemas/data de vos bases et restore à un état donné ? 
+On se demande souvent est-ce qu'il existe une façon simple de versionner les schemas/data de nos bases ? 
 
 Dolt apporte une réponse en combinant à la fois git et mysql.
 
 ## 101
 
-Dolt est une base de donnée open source ou on peut faire des fork, clone, branch, merge, push et pull... Comme un git repository !
+Dolt est une base de donnée open source ou on peut faire des fork, clone, branch, merge, push et pull avec la data... Un peu comme un git repository !
 
 Depuis la documentation, Dolt c'est : 
 
@@ -33,7 +33,7 @@ Les usescases qu'on a retenu :
 
 + **Data release:** Avoir les mêmes pratiques dev avec la data, branch, revue puis merge.
 
-Ca permet d'améliorer la qualité de nos données, le partage et facilite le restore à n'importe quel état.
+Ca permet d'améliorer la qualité de nos données, le partage, facilite le versionning de nos schemas/datas et donc le restore à n'importe quel état.
 
 + **Giving branch & merge to customers**
 
@@ -54,7 +54,7 @@ Pour les curieux :
 
 ## DoltHub
 
-C'est un système de contrôle de version pour la data.
+C'est un système de contrôle de version (cad : github, gitlab...)  pour la data.
 
 On va y retrouver des previews, on peut y créer des catalogues de requêtes pré-générée pour faciliter la visibilité et le partage de la data.
 
@@ -68,7 +68,7 @@ Voir exemple : https://www.dolthub.com/repositories/dolthub/corona-virus/query/m
 + 📸 Snapshots: tous les commits sont un snapshot de la base 
 + Time travel: requêter une ancienne version
 + Rollbacks: `dolt reset --hard HEAD~3` pour undone les 3 derniers commits.
-+ Une documentation claire, avec des blogs intéressant
++ Une documentation claire, avec des blogs intéressants
 + Avoir les pratiques de dev sur sa base
 
 ❌ Cons:
