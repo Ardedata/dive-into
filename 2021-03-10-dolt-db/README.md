@@ -12,19 +12,19 @@ https://github.com/dolthub/dolt
 * [DoltHub](#dolthub)
 * [Pros & Cons](#pros-cons)
 
-On se demande souvent est-ce qu'il existe une façon simple de versionner les schemas/data de nos bases ? 
+On se demande souvent est-ce qu'il existe une façon simple de versionner les schémas/data de nos bases de données ? 
 
 Dolt apporte une réponse en combinant à la fois git et mysql.
 
 ## 101
 
-Dolt est une base de donnée open source ou on peut faire des fork, clone, branch, merge, push et pull avec la data... Un peu comme un git repository !
+Dolt est une base de donnée open source où il est possible de faire des fork, clone, branch, merge, push et pull avec de la data... Un peu comme un git repository !
 
 Depuis la documentation, Dolt c'est : 
 
 ` The Dolt database provides a command line interface and a MySQL compatible Server for reading and writing data `
 
-Si vous êtes intéressé à tester la solution, on vous recommande leur quick start : https://docs.dolthub.com/getting-started/installation
+Si vous êtes intéressé pour tester la solution, on vous recommande leur quick start : https://docs.dolthub.com/getting-started/installation
 
 ## Usecases
 
@@ -41,7 +41,7 @@ Isoler la data sur des branches pour faire tester de nouvelles feature sans impa
 
 + **Data provenance & audit:**
 
-Tracker les changements, savoir qui a fait, quel était le message du commit, quelle était la valeur précédente.
+Tracker les changements, savoir qui a fait un changement/une modification, quel était le message du commit, quelle était la valeur précédente.
 
 
 
