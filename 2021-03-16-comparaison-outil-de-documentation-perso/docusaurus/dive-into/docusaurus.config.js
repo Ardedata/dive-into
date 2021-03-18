@@ -2,14 +2,26 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://les-copains.gitlab.io',
+  baseUrl: '/dive-into/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: '76b8a1ca85fa11fa7e9b4526822301b1',
+      indexName: 'dive-into',
+      appId: 'XDEEVRZ8BC',
+      // Optional: see doc section bellow
+      contextualSearch: true,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     navbar: {
       title: 'My Site',
       logo: {

@@ -1,7 +1,6 @@
 # GIT + Mysql = Dolt
 
-<img align="center" height="300" src="./dolt_hi.svg"/>
-
+![dolt logo](/img/dolt_hi.svg)
 
 https://github.com/dolthub/dolt
 
