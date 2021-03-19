@@ -22,6 +22,11 @@ module.exports = {
 
       //... other Algolia params
     },
+    googleAnalytics: {
+      trackingID: 'G-HGGYWQMED6',
+      // Optional fields.
+      anonymizeIP: true, // Should IPs be anonymized?
+    },
     navbar: {
       title: 'My Site',
       logo: {

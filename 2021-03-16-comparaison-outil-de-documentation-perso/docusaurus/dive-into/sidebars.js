@@ -4,7 +4,8 @@ module.exports = {
       type: 'category',
       label: 'tech-posts',
       items: [
-	'tech_posts/dolt'
+	'tech_posts/dolt',
+	'tech_posts/comparaison-outils-documentation'
       ],
     },
     {

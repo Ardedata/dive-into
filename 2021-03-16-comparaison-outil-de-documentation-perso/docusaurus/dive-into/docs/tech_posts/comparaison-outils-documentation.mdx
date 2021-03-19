@@ -1,0 +1,112 @@
+# Comparaison d'outils pour générer de la documentation/blogs
+
+
+## Table des matières
+
+* [Objectif de ce post](#objectif-de-ce-post)
+* [Les candidats](#les-candidats)
+* [résultats](#résultats)
+
+## 🚀Objectif de ce post🚀: 
+
+Comparer plusieurs outils en fonctions des besoins définis ci-dessous !
+
+ Il n'y aura qu'un seul gagnant 🥇 !
+
+Nos besoins :
+-------------
+
+**On veut :**
+
++ Quelque chose de sexy (pas un vieux truc)
++ Faire des recherches sur nos docs/blogs
+ Le déployer sur un bucket s3 ou sur du pages
++ Que ça soit simple à mettre en place (max 1/2 journée)
++ Que ça soit juste un markdown à ajouter/modifier/supprimer si on veut toucher à notre contenu
+
+
+Pour ceux qui ne sont pas intéressé aux détails vous pouvez directement aller à la rubrique [résultats](#résultats)
+
+## 💻Les candidats💻:
+
+Les outils que nous avons retenus sont des projets OpenSource.
+
+[Sphinx](https://github.com/sphinx-doc/sphinx)🐱:
+-------------------------------------------------
+
+[![GitHub stars](https://img.shields.io/github/stars/sphinx-doc/sphinx?style=social&label=Star&maxAge=2592000)](https://github.com/sphinx-doc/sphinx/stargazers)
+
+On le retrouve beaucoup pour les documentations python, lui même ecrit en 🐍  ( voir les templates: https://sphinx-themes.org/ , ils vous sont surement familier 😉 )
+
+Il génère à partir de sources `reStructuredText` des fichiers statiques (css,js,html), le format `.rst` est un [langage de balisage léger](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+
+[Hugo](https://themes.gohugo.io/):
+----------------------------------
+
+[![GitHub stars](https://img.shields.io/github/stars/gohugoio/hugo?style=social&label=Star&maxAge=2592000)](https://github.com/gohugoio/hugo/stargazers)
+
+Vendu comme le : `The world’s fastest framework for building websites`
+
+Hugo est un générator de site web ecrit en [Go](https://golang.org/) 
+
+Il génère du contenu statiques à partir du contenu qu'on a écrit en markdown 🤓 ( comme un README.md avec des metadata ) 
+
+
+[Docusaurus](https://github.com/facebook/docusaurus)🦖:
+-------------------------------------------------------
+
+[![GitHub stars](https://img.shields.io/github/stars/facebook/docusaurus?style=social&label=Star&maxAge=2592000)](https://github.com/gohugoio/facebook/docusaurus)
+
+Développé par Facebook, utilisé pour les documentations de React, React Native, Redux... 
+Docusaurus est écrit en js/ts (react) et permet de générer un site avec du contenu écrit en markdown.
+
+
+D'autres solutions que nous n'avons pas retenues :
+--------------------------------------------------
+
+~~[Gatsby](https://www.gatsbyjs.com/docs/)~~
+
+~~[GitBook](https://docs.gitbook.com/)~~
+
+~~[Jekyll](https://jekyllrb.com/docs/)~~
+
+
+## Résultats:
+
+|  | searchbar |   style subjectif |  facile | customisable |
+|-|-|-|-|-|
+| Sphynx |    ✅ | ⭐️⭐️  | ⭐️⭐️⭐️⭐️⭐️     | ⭐️ |
+| Hugo |    ✅ | ⭐️⭐️⭐️   | ⭐️⭐️⭐️   | ⭐️⭐️⭐️   |
+| Docusaurus |    ✅ | ⭐️⭐️⭐️⭐️⭐️     | ⭐️⭐️⭐️   | ⭐️⭐️⭐️⭐️⭐️     |
+
+```mdx-code-block
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  className="unique-tabs"
+  defaultValue="Docusaurus"
+  values={[
+    {label: '🥇Docusaurus', value: 'docusaurus'},
+    {label: '🥈Sphynx', value: 'sphynx'},
+    {label: '🥉Hugo', value: 'hugo'},
+  ]}>
+  <TabItem value="docusaurus">
+
+	🥇 On a retenu Docusaurus, pour notre besoin de documentation + blog, 
+	c'est celui qui nous convenait le plus... 
+
+	Mais pourquoi ?
+	
+	* Il propose des fonctionnalités markdown qu'on ne retrouvait pas chez les autres, voir 
+	la [doc Markdown Features](https://v2.docusaurus.io/docs/markdown-features/tabs#!)
+	* Il propose un composant de bar de recherche [algolia DocSearch](https://v2.docusaurus.io/docs/search),
+	qui marche très bien !
+	* Il peut être  
+	
+
+</TabItem>
+  <TabItem value="sphynx">🥈 Facile à prendre en main et top pour de la documentation, mais compliqué à customiser</TabItem>
+  <TabItem value="hugo">🥉 </TabItem>
+</Tabs> 
+```
