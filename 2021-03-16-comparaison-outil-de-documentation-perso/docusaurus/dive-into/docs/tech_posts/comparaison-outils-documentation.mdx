@@ -1,5 +1,6 @@
-# Comparaison d'outils pour générer de la documentation/blogs
-
+---
+title: Comparaison d'outils pour générer de la documentation/blogs
+---
 
 ## Table des matières
 
@@ -19,10 +20,10 @@ Nos besoins :
 **On veut :**
 
 + Quelque chose de sexy (pas un vieux truc)
-+ Faire des recherches sur nos docs/blogs
- Le déployer sur un bucket s3 ou sur du pages
++ Une bar de recherche
++ Le déployer sur un stockage objet (s3) ou sur du gitlab/github pages
 + Que ça soit simple à mettre en place (max 1/2 journée)
-+ Que ça soit juste un markdown à ajouter/modifier/supprimer si on veut toucher à notre contenu
++ Que ça soit juste un markdown à ajouter/modifier/supprimer
 
 
 Pour ceux qui ne sont pas intéressé aux détails vous pouvez directement aller à la rubrique [résultats](#résultats)
@@ -36,16 +37,25 @@ Les outils que nous avons retenus sont des projets OpenSource.
 
 [![GitHub stars](https://img.shields.io/github/stars/sphinx-doc/sphinx?style=social&label=Star&maxAge=2592000)](https://github.com/sphinx-doc/sphinx/stargazers)
 
-On le retrouve beaucoup pour les documentations python, lui même ecrit en 🐍  ( voir les templates: https://sphinx-themes.org/ , ils vous sont surement familier 😉 )
+On le retrouve beaucoup pour les documentations python, lui même écrit en 🐍 !
 
-Il génère à partir de sources `reStructuredText` des fichiers statiques (css,js,html), le format `.rst` est un [langage de balisage léger](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+*( voir les templates: https://sphinx-themes.org/ , ils vous sont surement familiers 😉 )*
+
+Il génère à partir de sources `reStructuredText` des fichiers statiques (css,js,html)
+
+:::tip Le format .rst c'est quoi ?
+
+Le format `.rst` est un [langage de balisage léger](https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html)
+
+Pour comprendre les différences entre le markdown et le reStructuredText, voir cet [article](https://www.zverovich.net/2016/06/16/rst-vs-markdown.html)
+:::
 
 [Hugo](https://themes.gohugo.io/):
 ----------------------------------
 
 [![GitHub stars](https://img.shields.io/github/stars/gohugoio/hugo?style=social&label=Star&maxAge=2592000)](https://github.com/gohugoio/hugo/stargazers)
 
-Vendu comme le : `The world’s fastest framework for building websites`
+Vendu comme : `The world’s fastest framework for building websites`
 
 Hugo est un générator de site web ecrit en [Go](https://golang.org/) 
 
@@ -57,12 +67,16 @@ Il génère du contenu statiques à partir du contenu qu'on a écrit en markdown
 
 [![GitHub stars](https://img.shields.io/github/stars/facebook/docusaurus?style=social&label=Star&maxAge=2592000)](https://github.com/gohugoio/facebook/docusaurus)
 
-Développé par Facebook, utilisé pour les documentations de React, React Native, Redux... 
+Développé par Facebook, il est utilisé pour les documentations de React, React Native, Redux... 
+
 Docusaurus est écrit en js/ts (react) et permet de générer un site avec du contenu écrit en markdown.
 
 
 D'autres solutions que nous n'avons pas retenues :
 --------------------------------------------------
+
+
+~~[Mkdocs](https://github.com/mkdocs/mkdocs)~~
 
 ~~[Gatsby](https://www.gatsbyjs.com/docs/)~~
 
@@ -91,22 +105,20 @@ import TabItem from '@theme/TabItem';
     {label: '🥈Sphynx', value: 'sphynx'},
     {label: '🥉Hugo', value: 'hugo'},
   ]}>
-  <TabItem value="docusaurus">
+ <TabItem value="docusaurus">
 
-	🥇 On a retenu Docusaurus, pour notre besoin de documentation + blog, 
-	c'est celui qui nous convenait le plus... 
+  🥇 On a retenu Docusaurus, car : 
 
-	Mais pourquoi ?
-	
-	* Il propose des fonctionnalités markdown qu'on ne retrouvait pas chez les autres, voir 
-	la [doc Markdown Features](https://v2.docusaurus.io/docs/markdown-features/tabs#!)
-	* Il propose un composant de bar de recherche [algolia DocSearch](https://v2.docusaurus.io/docs/search),
-	qui marche très bien !
-	* Il peut être  
-	
+  Il propose des fonctionnalités markdown qu'on ne retrouvait pas chez les autres, voir 
+  la [doc Markdown Features](https://v2.docusaurus.io/docs/markdown-features/tabs#!)
 
-</TabItem>
-  <TabItem value="sphynx">🥈 Facile à prendre en main et top pour de la documentation, mais compliqué à customiser</TabItem>
-  <TabItem value="hugo">🥉 </TabItem>
+  Il propose un composant de bar de recherche [algolia DocSearch](https://v2.docusaurus.io/docs/search),
+  qui marche très bien !
+
+  Le thème du starter est très joli 🙄
+
+ </TabItem>
+  <TabItem value="sphynx">🥈 Facile à prendre en main et top pour de la documentation de projet, mais compliqué à customiser pour une utilisation plus orienté blog </TabItem>
+  <TabItem value="hugo">🥉 On a pas trouvé un thème qui correspondait vraiment à ce qu'on recherchait</TabItem>
 </Tabs> 
 ```

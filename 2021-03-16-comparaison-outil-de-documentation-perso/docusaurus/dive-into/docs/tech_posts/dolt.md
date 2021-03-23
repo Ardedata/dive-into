@@ -1,4 +1,8 @@
-# GIT + Mysql = Dolt
+---
+title: GIT + Mysql = Dolt
+slug: /
+---
+
 
 ![dolt logo](/img/dolt_hi.svg)
 
