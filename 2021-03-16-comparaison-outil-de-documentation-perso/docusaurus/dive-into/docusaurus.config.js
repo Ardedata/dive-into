@@ -2,8 +2,8 @@
 module.exports = {
   title: 'My Site',
   tagline: 'The tagline of my site',
-  url: 'https://les-copains.gitlab.io',
-  baseUrl: '/dive-into/',
+  url: 'https://les-copains.lcaminale.com',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -22,8 +22,8 @@ module.exports = {
 
       //... other Algolia params
     },
-    googleAnalytics: {
-      trackingID: 'G-F9L8GZCBS6',
+    gtag: {
+      trackingID: 'G-XN0PYBT2T9',
     },
     navbar: {
       title: 'My Site',
