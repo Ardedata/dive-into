@@ -33,9 +33,9 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          to: 'posts/',
+          activeBasePath: 'posts',
+          label: 'posts',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
