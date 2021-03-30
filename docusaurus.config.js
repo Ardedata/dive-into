@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Les Copains',
+  tagline: 'Des posts et des blogs',
   url: 'https://les-copains.lcaminale.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -26,7 +26,7 @@ module.exports = {
       trackingID: 'G-XN0PYBT2T9',
     },
     navbar: {
-      title: 'My Site',
+      title: 'Les Copains',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
