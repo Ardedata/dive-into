@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Les Copains',
-  tagline: 'Des posts et des blogs',
+  tagline: 'En cours de réalisation',
   url: 'https://les-copains.lcaminale.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -33,9 +33,9 @@ module.exports = {
       },
       items: [
         {
-          to: 'posts/',
-          activeBasePath: 'posts',
-          label: 'posts',
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Posts',
           position: 'left',
         },
         {to: 'blog', label: 'Blog', position: 'left'},
