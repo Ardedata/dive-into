@@ -5,10 +5,8 @@ pages:
   stage: deploy
   image: node:latest
   script:
-    - cd 2021-03-16-comparaison-outil-de-documentation-perso/docusaurus/dive-into
     - yarn install
     - yarn build:gitlab
-    - mv public ../../../
   artifacts:
     paths:
       - public/
