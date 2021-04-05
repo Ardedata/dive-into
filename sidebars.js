@@ -6,7 +6,8 @@ module.exports = {
       items: [
 	'tech_posts/2021-03-10-dolt-db',
         'tech_posts/2021-03-12-apache-parquet',
-	'tech_posts/2021-03-16-comparaison-outils-documentation'
+	'tech_posts/2021-03-16-comparaison-outils-documentation',
+	'tech_posts/2021-04-23-miracles-queries-postgres'
       ],
     },
     {
