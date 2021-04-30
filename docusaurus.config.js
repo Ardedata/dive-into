@@ -11,9 +11,9 @@ module.exports = {
   projectName: 'dive-into', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: '76b8a1ca85fa11fa7e9b4526822301b1',
+      apiKey: '53af7952396e5be48d55cbb3785cf3b8',
       indexName: 'dive-into',
-      appId: 'XDEEVRZ8BC',
+      appId: 'L13U009O8B',
       // Optional: see doc section bellow
       contextualSearch: true,
 
