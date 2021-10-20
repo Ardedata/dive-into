@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Les Copains',
   tagline: 'En cours de réalisation',
-  url: 'https://les-copains.lcaminale.com',
+  url: 'https://caminale.github.io/dive-into/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -40,8 +40,8 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://gitlab.com/les-copains',
-          label: 'Gitlab',
+          href: 'https://caminale.github.io/dive-into/',
+          label: 'github',
           position: 'right',
         },
       ],
